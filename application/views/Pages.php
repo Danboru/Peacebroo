@@ -1,3 +1,14 @@
+<!--
+    __                       __
+   /\ \                     /\ \
+  _\_\ \      __     __  ___\ \ \__._     ___
+ /, _ . \   /'__`\  /\ \ \  \\ \  __ \   / __`\
+/\  \L\  \ /\ \L\.\_\ \  V   \\ \ \_\ \ /\ \L\ \
+\ \____,__\\ \__/.\_\\ \  /\  \\ \ ___,\\ \____/
+ \/___, _ / \/__/\/_/ \_\_\ \__\\/__,__/ \/___/
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -17,14 +28,14 @@
 <div class="wrapper">
     <div class="box">
         <div class="row row-offcanvas row-offcanvas-right">
-                        
+
             <!-- sidebar -->
             <div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
-              
+
               <ul class="nav">
           			<li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
             	</ul>
-               
+
                <center>
                 <ul class="nav hidden-xs" id="lg-menu">
                     <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 1</a></li>
@@ -36,7 +47,7 @@
                     <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 7</a></li>
                     <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 8</a></li>
                     <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 9</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 10</a></li>
+                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 0</a></li>
 
                     <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 1</a></li>
                     <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 2</a></li>
@@ -47,10 +58,10 @@
                     <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 7</a></li>
                     <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 8</a></li>
                     <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 9</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 10</a></li>
+                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 0</a></li>
                 </ul></center>
-                          
-              	<!-- tiny only nav-->
+
+              <!-- tiny only nav-->
               <ul class="nav visible-xs" id="xs-menu">
 
                   	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
@@ -74,17 +85,17 @@
                   	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
                   	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
                   	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                    
+
                 </ul>
-              
+
             </div>
             <!-- /sidebar -->
-          
+
             <!-- main right col -->
             <div class="column col-sm-10 col-xs-11" id="main">
-                
+
                 <!-- navigasi atas -->
-              	<div class="navbar navbar-blue navbar-static-top">  
+              	<div class="navbar navbar-blue navbar-static-top">
                     <div class="navbar-header">
                       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle</span>
@@ -96,7 +107,7 @@
                       <!-- Bagian Logo -->
                       <a href="/" class="navbar-brand logo">P</a>
                       <!-- Bagian Logo -->
-                  	
+
                   	</div>
                   	<nav class="collapse navbar-collapse" role="navigation">
 
@@ -114,7 +125,7 @@
                       <li>
                         <a href="#"><i class="glyphicon glyphicon-home"></i> Halaman Utama</a>
                       </li>
-                      <li> 
+                      <li>
                         <a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Status</a>
                       </li>
                       <li>
@@ -139,24 +150,24 @@
 
                 </div>
                 <!-- navigasi atas -->
-              
+
                 <div class="padding">
                     <div class="full col-sm-9">
-                      
-                        <!-- content -->                      
+
+                        <!-- content -->
                       	<div class="row">
-                          
-                         <!-- main col left --> 
+
+                         <!-- main col left -->
                          <div class="col-sm-5">
 
 
                            	<!-- Bagian Foto Profile -->
                               <div class="panel panel-default">
-                                <div class="panel-thumbnail"><img src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/13062347_978613352208473_6237959714626365316_n.jpg?oh=a908da83297667b1eea623ec412126ef&oe=58CCA71A" class="img-responsive"></div>
+                                <div class="panel-thumbnail"><img src="assets/images/profile.jpg" class="img-responsive"></div>
                                 <div class="panel-body">
                                   <p class="lead">Da N Bo</p>
                                   <p>3125 Followers, 532 Posts</p>
-                                  
+
                                   <p>
                                     <img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px">
                                   </p>
@@ -165,7 +176,7 @@
                               	<!-- Bagian Foto Profile -->
 
                               	<!-- Bagian Buat Status -->
-                              	<div class="well"> 
+                              	<div class="well">
                                    <form class="form-horizontal" role="form">
                                     <h4>Apa Yang Kamu Renungkan ?</h4>
                                      <div class="form-group" style="padding:14px;">
@@ -175,7 +186,7 @@
                                   </form>
                               </div>
                               <!-- Bagian Buat Status -->
-                           
+
                               <div class="panel panel-default">
                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Intro</h4></div>
                                   <div class="panel-body">
@@ -186,9 +197,9 @@
                                     </div>
                                   </div>
                               </div>
-                           
+
                             <!-- Update Email -->
-                              <div class="well"> 
+                              <div class="well">
                                    <form class="form">
                                     <h4>Ubah Email</h4>
                                     <div class="input-group text-center">
@@ -198,51 +209,51 @@
                                   </form>
                                 </div>
                                 <!-- Update Email -->
-                           
+
                               <div class="panel panel-default">
                                  <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Foto Anda</h4></div>
                                   <div class="panel-body" style="padding-right: 60px; padding-bottom: 40px;">
 
-                                    <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#"></a>
-                                    <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#"></a>
-                                    <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#"></a>
-                                    <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#"></a>
-                                    <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#"></a>
-                                    <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#"></a>
-                                    <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#"></a>
-                                    <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#"></a>
-                                    <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#"></a>
-                                    <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#"></a>
-                                    <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#"></a>
-                                    <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#"></a>
-                                    
+                                    <img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
+
 
                                   </div>
                               </div>
-                           
+
+															<!-- Bagian Tentang -->
                               <div class="panel panel-default">
                                 <div class="panel-heading"><h4>Tentang Anda?</h4></div>
                                	<div class="panel-body">
-                                
+
                                 	Pertanyaan ini pasti dan sering sekali ditanyakan pada awal wawancara kerja, baik saat wawancara kerja HR rekrutmen maupun User. Pertanyaan ini bertujuan untuk mengenal diri kalian lebih dalam lagi, dalam waktu yang cukup singkat.
 
                                  </div>
                               </div>
+															<!-- Bagian Tentang -->
 
-                           		
-                           
                           </div>
-                          
+
                           <!-- Bagian Utama -->
                           <div class="col-sm-7">
-                               
-                               <!-- Bagian View Status -->                   
+
+                               <!-- Bagian View Status -->
                                <div class="panel panel-default">
                                  <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Da N Bo</h4></div>
                                   <div class="panel-body">
 
                                     <p>Terkadang, kamu berusaha menghindari sesuatu, bukan berarti kamu membencinya. Kamu menginginkannya tapi kamu tahu bahwa itu salah.</p>
-                                    
+
                                     <hr>
                                     <form>
                                     <div class="input-group">
@@ -252,18 +263,18 @@
                                       <input type="text" class="form-control" placeholder="Add a comment..">
                                     </div>
                                     </form>
-                                    
+
                                   </div>
                                </div>
-                               <!-- Bagian View Status --> 
+                               <!-- Bagian View Status -->
 
-                                <!-- Bagian View Status -->                   
+                                <!-- Bagian View Status -->
                                <div class="panel panel-default">
                                  <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Da N Bo</h4></div>
                                   <div class="panel-body">
 
                                     <p>Jangan pernah meremehkan diri sendiri. Jika kamu tidak bahagia dengan hidupmu, perbaiki apa yang salah, dan teruslah melangkah.</p>
-                                    
+
                                     <hr>
                                     <form>
                                     <div class="input-group">
@@ -273,18 +284,18 @@
                                       <input type="text" class="form-control" placeholder="Add a comment..">
                                     </div>
                                     </form>
-                                    
+
                                   </div>
                                </div>
                                <!-- Bagian View Status -->
 
-                                <!-- Bagian View Status -->                   
+                                <!-- Bagian View Status -->
                                <div class="panel panel-default">
                                  <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Da N Bo</h4></div>
                                   <div class="panel-body">
 
                                     <p>Meratapi dan menyesali masa lalu tidak akan mengubah apa pun. Bangkit dan perbaiki setiap kesalahan yang ada.</p>
-                                    
+
                                     <hr>
                                     <form>
                                     <div class="input-group">
@@ -294,19 +305,19 @@
                                       <input type="text" class="form-control" placeholder="Add a comment..">
                                     </div>
                                     </form>
-                                    
+
                                   </div>
                                </div>
                                <!-- Bagian View Status -->
 
 
-                                <!-- Bagian View Status -->                   
+                                <!-- Bagian View Status -->
                                <div class="panel panel-default">
                                  <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Da N Bo</h4></div>
                                   <div class="panel-body">
 
                                     <p>Jika kalian gagal mendapatkan sesuatu, maka hanya satu hal yang harus kalian lakukan, coba lagi!</p>
-                                    
+
                                     <hr>
                                     <form>
                                     <div class="input-group">
@@ -316,19 +327,19 @@
                                       <input type="text" class="form-control" placeholder="Add a comment..">
                                     </div>
                                     </form>
-                                    
+
                                   </div>
                                </div>
                                <!-- Bagian View Status -->
 
 
-                                <!-- Bagian View Status -->                   
+                                <!-- Bagian View Status -->
                                <div class="panel panel-default">
                                  <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Da N Bo</h4></div>
                                   <div class="panel-body">
 
                                     <p>Jangan takut akan perubahan. Kita mungkin kehilangan sesuatu yang baik, namun kita akan peroleh sesuatu yang lebih baik lagi.</p>
-                                    
+
                                     <hr>
                                     <form>
                                     <div class="input-group">
@@ -338,39 +349,37 @@
                                       <input type="text" class="form-control" placeholder="Add a comment..">
                                     </div>
                                     </form>
-                                    
+
                                   </div>
                                </div>
                                <!-- Bagian View Status -->
-                            
+
                           </div>
                        </div>
                        <!-- Bagian Utama -->
-                        
 
-                        <!-- Bagian Footernya -->                    
-                        <div class="row" id="footer">    
+
+                        <!-- Bagian Footernya -->
+                        <div class="row" id="footer">
                           <div class="col-sm-6">
-                            
+
                           </div>
-                         
+
                         </div>
-                        <!-- Bagian Footernya -->  
-                      
+                        <!-- Bagian Footernya -->
+
                       <hr>
-                      
+
                       <h4 class="text-center">
                       <p>672014113</p>
                       </h4>
-                        
+
                       <hr>
-                        
-                      
                     </div><!-- /col-9 -->
                 </div><!-- /padding -->
             </div>
             <!-- /main -->
-          
+
         </div>
     </div>
 </div>
@@ -395,12 +404,13 @@
           <div>
           <button class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">Post</button>
             <ul class="pull-left list-inline"><li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li><li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
-		  </div>	
+		  </div>
       </div>
   </div>
   </div>
 </div>
-	<!-- script references -->
+
+	<!-- script references untuk jsnya -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="assets/js/scripts.js"></script>
