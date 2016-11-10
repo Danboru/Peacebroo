@@ -1,14 +1,3 @@
-<!--
-    __                       __
-   /\ \                     /\ \
-  _\_\ \      __     __  ___\ \ \__._     ___
- /, _ . \   /'__`\  /\ \ \  \\ \  __ \   / __`\
-/\  \L\  \ /\ \L\.\_\ \  V   \\ \ \_\ \ /\ \L\ \
-\ \____,__\\ \__/.\_\\ \  /\  \\ \ ___,\\ \____/
- \/___, _ / \/__/\/_/ \_\_\ \__\\/__,__/ \/___/
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -18,11 +7,60 @@
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="icon" href="assets/images/favicon.png" title="Peacebroo">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<link href="assets/css/style.css" rel="stylesheet">
 	</head>
+
+	<!-- bagian popup-->
+
+	<!-- popup upload file -->
+	<input type="file" id="upload" name="upload" style="visibility: hidden; width: 1px; height: 1px" multiple />
+	<!-- popup upload file -->
+
+	<!--Popup update statusny-->
+	<div id="postModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog">
+	  <div class="modal-content">
+	      <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				Update Keadaan
+	      </div>
+	      <div class="modal-body">
+	          <form class="form center-block">
+	            <div class="form-group">
+	              <textarea class="form-control input-lg" autofocus="" placeholder="Apa yang kamu Renungkan?"></textarea>
+	            </div>
+	          </form>
+	      </div>
+	      <div class="modal-footer">
+	          <div>
+	          <button class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">Sebarkan</button>
+
+							<ul class="pull-left list-inline">
+								<li>
+									<a href=""><i class="glyphicon glyphicon-upload" onclick="document.getElementById('upload').click(); return false"></i></a>
+								</li>
+
+								<li>
+									<a href=""><i class="glyphicon glyphicon-camera"></i></a>
+								</li>
+
+								<li>
+									<a href=""><i class="glyphicon glyphicon-map-marker"></i></a>
+								</li>
+
+						 </ul>
+			  </div>
+	      </div>
+	  </div>
+	  </div>
+	</div>
+	<!--Popup update statusny-->
+
+	<!-- bagian popup-->
 
 	<body>
 <div class="wrapper">
@@ -49,16 +87,6 @@
                     <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 9</a></li>
                     <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 0</a></li>
 
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 1</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 2</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 3</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 4</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 5</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 6</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 7</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 8</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 9</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 0</a></li>
                 </ul></center>
 
               <!-- tiny only nav-->
@@ -182,7 +210,22 @@
                                      <div class="form-group" style="padding:14px;">
                                       <textarea class="form-control" placeholder="Tulis Di Sini"></textarea>
                                     </div>
-                                    <button class="btn btn-primary pull-right" type="button">Sebarkan</button><ul class="list-inline"><li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li><li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
+                                    <button class="btn btn-primary pull-right" type="button">Sebarkan</button>
+
+																		<ul class="list-inline">
+																			<li>
+																				<a href=""><i class="glyphicon glyphicon-upload" onclick="document.getElementById('upload').click(); return false"></i></a>
+																			</li>
+
+																			<li>
+																				<a href=""><i class="glyphicon glyphicon-camera"></i></a>
+																			</li>
+
+																			<li>
+																				<a href=""><i class="glyphicon glyphicon-map-marker"></i></a>
+																			</li>
+																		</ul>
+
                                   </form>
                               </div>
                               <!-- Bagian Buat Status -->
@@ -382,32 +425,6 @@
 
         </div>
     </div>
-</div>
-
-
-<!--post modal-->
-<div id="postModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-  <div class="modal-content">
-      <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			Update Status
-      </div>
-      <div class="modal-body">
-          <form class="form center-block">
-            <div class="form-group">
-              <textarea class="form-control input-lg" autofocus="" placeholder="What do you want to share?"></textarea>
-            </div>
-          </form>
-      </div>
-      <div class="modal-footer">
-          <div>
-          <button class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">Post</button>
-            <ul class="pull-left list-inline"><li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li><li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
-		  </div>
-      </div>
-  </div>
-  </div>
 </div>
 
 	<!-- script references untuk jsnya -->

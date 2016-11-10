@@ -12,18 +12,31 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Data extends CI_Controller {
+class Arahan extends CI_Controller{
 
-	public function __construct()
-	{
-		parent::__construct();
-		
-    }
 
-	public function index()
+  public function index($pagenya = 'profil')
 	{
-		$this->load->view('Pages');
+    if(!file_exists(APPPATH."views/pages/".$pagenya.'.php')){
+
+  			show_404();
+
+  		}
+
+  		$this->load->view("pages/".$pagenya);
 	}
 
+
+public function view($pagenya = 'profil'){
+
+  if(!file_exists(APPPATH."views/pages/".$pagenya.'.php')){
+
+			show_404();
+
+		}
+
+		$this->load->view("pages/".$pagenya);
+
+}
 
 }
