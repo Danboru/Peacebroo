@@ -1,6 +1,6 @@
 #Peacebroo (Connecting Jomblo)
 
-Ini adalah Project yang saya gunakan Untuk Latihan CodeIgniter , , , :)
+Ini adalah Project yang saya gunakan Untuk Belajar Framework , , , :)
 Frontend menggunakan Bootstrap v3.3.7 , dan untuk Backend menggunakan CodeIgniter Version 3.1.2.
 Semoga bermanfaat :)
 
