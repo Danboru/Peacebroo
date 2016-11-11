@@ -39,4 +39,6 @@ public function view($pagenya = 'profil'){
 
 }
 
+
+
 }

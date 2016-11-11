@@ -14,7 +14,7 @@
 		<link href="assets/css/style.css" rel="stylesheet">
 	</head>
 
-	<!-- bagian popup-->
+	<!-- bagian popup mulai darisini -->
 
 	<!-- popup upload file -->
 	<input type="file" id="upload" name="upload" style="visibility: hidden; width: 1px; height: 1px" multiple />
@@ -60,7 +60,7 @@
 	</div>
 	<!--Popup update statusny-->
 
-	<!-- bagian popup-->
+	<!-- bagian popup berakhir di sini -->
 
 	<body>
 <div class="wrapper">
@@ -71,7 +71,9 @@
             <div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
 
               <ul class="nav">
-          			<li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+          			<li>
+									<a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a>
+								</li>
             	</ul>
 
                <center>
@@ -177,7 +179,7 @@
                   	</nav>
 
                 </div>
-                <!-- navigasi atas -->
+                <!-- /navigasi atas -->
 
                 <div class="padding">
                     <div class="full col-sm-9">
@@ -185,7 +187,7 @@
                         <!-- content -->
                       	<div class="row">
 
-                         <!-- main col left -->
+                         <!-- main col kiri -->
                          <div class="col-sm-5">
 
 
@@ -286,7 +288,10 @@
 															<!-- Bagian Tentang -->
 
                           </div>
+													<!-- /main col kiri -->
 
+													<!-- Container status keselluruhan -->
+													<div id="statusny">
                           <!-- Bagian Utama -->
                           <div class="col-sm-7">
 
@@ -398,6 +403,8 @@
                                <!-- Bagian View Status -->
 
                           </div>
+													</div>
+
                        </div>
                        <!-- Bagian Utama -->
 
