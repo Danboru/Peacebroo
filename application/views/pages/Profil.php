@@ -172,13 +172,13 @@
 
                     <ul class="nav navbar-nav">
                       <li>
-                        <a href="#"><i class="glyphicon glyphicon-home"></i> Halaman Utama</a>
+                        <a href="#"><i class="glyphicon glyphicon-home"></i> Beranda</a>
                       </li>
                       <li>
                         <a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Status</a>
                       </li>
                       <li>
-                        <a href="#"><span class="badge">Tombol</span></a>
+                        <a href="#"><span class="badge">Pesan</span></a>
                       </li>
                     </ul>
 
