@@ -7,6 +7,7 @@
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/chatboxnya.css">
 		<link rel="icon" href="assets/images/favicon.png" title="Peacebroo">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,9 +17,27 @@
 
 	<!-- bagian popup mulai darisini -->
 
+	<!-- Bagian popup Chatnya -->
+	<div id="panggil_chat">
+		<div class="shout_box">
+		<div class="header">Peacebroo Chat <div class="close_btn">&nbsp;</div></div>
+		  <div class="toggle_chat">
+		  <div class="message_box">
+		    </div>
+		    <div class="user_info">
+		    <input name="shout_username" id="shout_username" type="text" placeholder="Nama Kamu" maxlength="15" />
+		   <input name="shout_message" id="shout_message" type="text" placeholder="Ketik Pesan, Tekan enter" maxlength="100" />
+		    </div>
+		    </div>
+		</div>
+	</div>
+	<!-- /Bagian popup Chatnya -->
+
 	<!-- popup upload file -->
 	<input type="file" id="upload" name="upload" style="visibility: hidden; width: 1px; height: 1px" multiple />
 	<!-- popup upload file -->
+
+
 
 	<!--Popup update statusny-->
 	<div id="postModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
@@ -437,6 +456,8 @@
 	<!-- script references untuk jsnya -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/autoload_chat.js"></script>
+
 	</body>
 </html>
