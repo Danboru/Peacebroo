@@ -1,5 +1,5 @@
 <?php
 
-echo "Ini adalah Sebuah Halaman Baru";
+echo "<h1>Sebuah Halaman Baru</h1>";
 
  ?>

@@ -28,7 +28,8 @@
 
         <div id="header-main-right">
           <div id="header-main-right-nav">
-        <form method="post" action="" id="login_form" name="login_form">
+
+        <form method="post" action="<?php echo base_url('login/aksi_login');?>" id="login_form" role="form">
           <table border="0" style="border:none">
             <tr>
               <td ><input type="text" tabindex="1"  id="email" placeholder="Email" name="email" class="inputtext radius1" value=""></td>

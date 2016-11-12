@@ -186,10 +186,10 @@
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i></a>
                         <ul class="dropdown-menu">
-                          <li><a href="">Pengaturan</a></li>
-                          <li><a href="">Privacy</a></li>
-                          <li><a href="">Halaman</a></li>
-                          <li><a href="">Iklan</a></li>
+                          <li><a href="http://danboru.dev/Peacebroo/pengaturan">Pengaturan</a></li>
+                          <li><a href="http://danboru.dev/Peacebroo/privacy">Privacy</a></li>
+                          <li><a href="http://danboru.dev/Peacebroo/halaman">Halaman</a></li>
+                          <li><a href="http://danboru.dev/Peacebroo/iklan">Iklan</a></li>
                           <li><a href="http://danboru.dev/Peacebroo/login">Keluar</a></li>
                         </ul>
                       </li>
