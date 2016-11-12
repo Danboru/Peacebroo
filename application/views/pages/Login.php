@@ -23,7 +23,7 @@
 <!-- header starts here -->
 <div id="facebook-Bar">
   <div id="facebook-Frame">
-    <div id="logo"> <a href="http://danboru.dev/Peacebroo/login">Peacebroo</a> </div>
+    <div id="logo"><a href="http://danboru.dev/Peacebroo/login">Peacebroo</a> </div>
 
 
         <div id="header-main-right">
@@ -39,7 +39,7 @@
             <tr>
             <td><label><input id="persist_box" type="checkbox" name="persistent" value="1" checked="1"/><span style="color:#ccc;">Jangan Lupakan Aku</span></label>
             </td>
-            <td><label><a href="" style="color:#ccc; text-decoration:none">Lupa lagi?</a></label></td>
+            <td><label><a href="http://danboru.dev/Peacebroo/lupa_lagi" style="color:#ccc; text-decoration:none">Lupa lagi?</a></label></td>
             </tr>
           </table>
         </form>

@@ -26,8 +26,8 @@ class Login extends CI_Controller{
 
 		if($cek > 0){
 			$data_session = array(
-				'nama' => $username,
-				'status' => "login"
+				'nama' => "Da N Bo",
+				'status' => "Online"
 				);
 
 			$this->session->set_userdata($data_session);

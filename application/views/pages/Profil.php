@@ -20,7 +20,7 @@
 	<!-- Bagian popup Chatnya -->
 	<div id="panggil_chat">
 		<div class="shout_box">
-		<div class="header">Chat <div class="close_btn">&nbsp;</div></div>
+		<div class="header"><?php echo $this->session->userdata("status"); ?> <div class="close_btn">&nbsp;</div></div>
 		  <div class="toggle_chat">
 		  <div class="message_box">
 		    </div>
@@ -190,7 +190,7 @@
                           <li><a href="http://danboru.dev/Peacebroo/privacy">Privacy</a></li>
                           <li><a href="http://danboru.dev/Peacebroo/halaman">Halaman</a></li>
                           <li><a href="http://danboru.dev/Peacebroo/iklan">Iklan</a></li>
-                          <li><a href="http://danboru.dev/Peacebroo/login">Keluar</a></li>
+                          <li><a href="<?php echo base_url('login/logout'); ?>">Keluar</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -214,7 +214,7 @@
                               <div class="panel panel-default">
                                 <div class="panel-thumbnail"><img src="assets/images/profile.jpg" class="img-responsive"></div>
                                 <div class="panel-body">
-                                  <p class="lead">Da N Bo</p>
+                                  <p class="lead"><?php echo $this->session->userdata("nama"); ?></p>
                                   <p>3125 Followers, 532 Posts</p>
 
                                   <p>
@@ -276,21 +276,12 @@
 
                               <div class="panel panel-default">
                                  <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Foto Anda</h4></div>
-                                  <div class="panel-body" style="padding-right: 60px; padding-bottom: 40px;">
+                                  <div class="panel-body" style="padding-right: 60px; padding-bottom: 20px;">
 
-                                    <img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
-																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
-																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
-																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
-																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
-																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
-																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
-																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
-																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
-																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
-																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
-																		<img src="assets/images/images.png" class="img-circle pull-right"> <a href="#"></a>
-
+                                    <img src="assets/images/images.png" class="img-rectangle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images.png" class="img-rectangle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images.png" class="img-rectangle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images.png" class="img-rectangle pull-right"> <a href="#"></a>
 
                                   </div>
                               </div>
@@ -316,7 +307,7 @@
 
                                <!-- Bagian View Status -->
                                <div class="panel panel-default">
-                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Da N Bo</h4></div>
+                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4><?php echo $this->session->userdata("nama"); ?></h4></div>
                                   <div class="panel-body">
 
                                     <p>Terkadang, kamu berusaha menghindari sesuatu, bukan berarti kamu membencinya. Kamu menginginkannya tapi kamu tahu bahwa itu salah.</p>
@@ -337,7 +328,7 @@
 
                                 <!-- Bagian View Status -->
                                <div class="panel panel-default">
-                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Da N Bo</h4></div>
+                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4><?php echo $this->session->userdata("nama"); ?></h4></div>
                                   <div class="panel-body">
 
                                     <p>Jangan pernah meremehkan diri sendiri. Jika kamu tidak bahagia dengan hidupmu, perbaiki apa yang salah, dan teruslah melangkah.</p>
@@ -358,7 +349,7 @@
 
                                 <!-- Bagian View Status -->
                                <div class="panel panel-default">
-                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Da N Bo</h4></div>
+                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4><?php echo $this->session->userdata("nama"); ?></h4></div>
                                   <div class="panel-body">
 
                                     <p>Meratapi dan menyesali masa lalu tidak akan mengubah apa pun. Bangkit dan perbaiki setiap kesalahan yang ada.</p>
@@ -380,7 +371,7 @@
 
                                 <!-- Bagian View Status -->
                                <div class="panel panel-default">
-                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Da N Bo</h4></div>
+                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4><?php echo $this->session->userdata("nama"); ?></h4></div>
                                   <div class="panel-body">
 
                                     <p>Jika kalian gagal mendapatkan sesuatu, maka hanya satu hal yang harus kalian lakukan, coba lagi!</p>
@@ -402,7 +393,7 @@
 
                                 <!-- Bagian View Status -->
                                <div class="panel panel-default">
-                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Da N Bo</h4></div>
+                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4><?php echo $this->session->userdata("nama"); ?></h4></div>
                                   <div class="panel-body">
 
                                     <p>Jangan takut akan perubahan. Kita mungkin kehilangan sesuatu yang baik, namun kita akan peroleh sesuatu yang lebih baik lagi.</p>
