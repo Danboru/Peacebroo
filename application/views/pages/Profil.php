@@ -20,7 +20,7 @@
 	<!-- Bagian popup Chatnya -->
 	<div id="panggil_chat">
 		<div class="shout_box">
-		<div class="header">Peacebroo Chat <div class="close_btn">&nbsp;</div></div>
+		<div class="header">Chat <div class="close_btn">&nbsp;</div></div>
 		  <div class="toggle_chat">
 		  <div class="message_box">
 		    </div>
@@ -190,7 +190,7 @@
                           <li><a href="">Privacy</a></li>
                           <li><a href="">Halaman</a></li>
                           <li><a href="">Iklan</a></li>
-                          <li><a href="">Keluar</a></li>
+                          <li><a href="http://danboru.dev/Peacebroo/login">Keluar</a></li>
                         </ul>
                       </li>
                     </ul>

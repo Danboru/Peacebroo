@@ -23,7 +23,7 @@
 <!-- header starts here -->
 <div id="facebook-Bar">
   <div id="facebook-Frame">
-    <div id="logo"> <a href="#">Peacebroo</a> </div>
+    <div id="logo"> <a href="http://danboru.dev/Peacebroo/profil">Peacebroo</a> </div>
 
 
         <div id="header-main-right">
@@ -33,7 +33,7 @@
             <tr>
               <td ><input type="text" tabindex="1"  id="email" placeholder="Email" name="email" class="inputtext radius1" value=""></td>
               <td ><input type="password" tabindex="2" id="pass" placeholder="Password" name="pass" class="inputtext radius1" ></td>
-              <td ><input type="submit" class="fbbutton" name="login" value="Login" /></td>
+              <td ><input type="submit" class="fbbutton" name="login" value="Login"/></td>
             </tr>
             <tr>
             <td><label><input id="persist_box" type="checkbox" name="persistent" value="1" checked="1"/><span style="color:#ccc;">Jangan Lupakan Aku</span></label>
