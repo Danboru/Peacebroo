@@ -23,7 +23,7 @@
 <!-- header starts here -->
 <div id="facebook-Bar">
   <div id="facebook-Frame">
-    <div id="logo"> <a href="http://danboru.dev/Peacebroo/profil">Peacebroo</a> </div>
+    <div id="logo"> <a href="http://danboru.dev/Peacebroo/login">Peacebroo</a> </div>
 
 
         <div id="header-main-right">
@@ -32,8 +32,8 @@
         <form method="post" action="<?php echo base_url('login/aksi_login');?>" id="login_form" role="form">
           <table border="0" style="border:none">
             <tr>
-              <td ><input type="text" tabindex="1"  id="email" placeholder="Email" name="email" class="inputtext radius1" value=""></td>
-              <td ><input type="password" tabindex="2" id="pass" placeholder="Password" name="pass" class="inputtext radius1" ></td>
+              <td ><input type="text" tabindex="1"  id="email" placeholder="Email" name="email" class="inputtext radius1" value="" required></td>
+              <td ><input type="password" tabindex="2" id="pass" placeholder="Password" name="pass" class="inputtext radius1" required></td>
               <td ><input type="submit" class="fbbutton" name="login" value="Login"/></td>
             </tr>
             <tr>

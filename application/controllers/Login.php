@@ -35,7 +35,9 @@ class Login extends CI_Controller{
 			redirect(base_url("profil"));
 
 		}else{
-			echo "Username dan password salah !";
+
+			redirect(base_url("login_ulang"));
+
 		}
 	}
 
