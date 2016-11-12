@@ -15,19 +15,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Arahan extends CI_Controller{
 
 
-  public function index($pagenya = 'profil')
+  public function index()
 	{
-    if(!file_exists(APPPATH."views/pages/".$pagenya.'.php')){
 
-  			show_404();
-
-  		}
-
-  		$this->load->view("pages/".$pagenya);
+  		$this->load->view("login");
 	}
 
 
-public function view($pagenya = 'profil'){
+public function view($pagenya = 'login'){
 
   if(!file_exists(APPPATH."views/pages/".$pagenya.'.php')){
 

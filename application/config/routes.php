@@ -50,8 +50,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
-$route['default_controller'] = 'arahan/index';//Login Controller
-$route['(:any)'] = 'Arahan/index/$1';
+$route['default_controller'] = 'arahan/view';
+$route['(:any)'] = 'arahan/view/$1';
 
 
 $route['404_override'] = '';
