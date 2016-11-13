@@ -13,6 +13,7 @@
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<link href="assets/css/style.css" rel="stylesheet">
+
 	</head>
 
 	<!-- bagian popup mulai darisini -->
@@ -26,7 +27,7 @@
 		    </div>
 		    <div class="user_info">
 		    <input name="shout_username" id="shout_username" type="text" placeholder="Nama Kamu" maxlength="15" />
-		   <input name="shout_message" id="shout_message" type="text" placeholder="Ketik Pesan, Tekan enter" maxlength="100" />
+		    <input name="shout_message" id="shout_message" type="text" placeholder="Ketik Pesan, Tekan enter" maxlength="100" />
 		    </div>
 		    </div>
 		</div>
@@ -56,7 +57,7 @@
 	      </div>
 	      <div class="modal-footer">
 	          <div>
-	          <button class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">Sebarkan</button>
+	          <button class="btn btn-primary btn-sm" data-dismiss="modal" id="update_status" aria-hidden="true">Sebarkan</button>
 
 							<ul class="pull-left list-inline">
 								<li>
@@ -215,28 +216,36 @@
 
                               	<!-- Bagian Buat Status -->
                               	<div class="well">
-                                   <form class="form-horizontal" role="form">
-                                    <h4>Apa Yang Kamu Renungkan ?</h4>
-                                     <div class="form-group" style="padding:14px;">
-                                      <textarea class="form-control" placeholder="Tulis Di Sini"></textarea>
-                                    </div>
-                                    <button class="btn btn-primary pull-right" type="button">Sebarkan</button>
 
-																		<ul class="list-inline">
-																			<li>
-																				<a href=""><i class="glyphicon glyphicon-upload" onclick="document.getElementById('upload').click(); return false"></i></a>
-																			</li>
+																	<form class="form-horizontal" name="add_status" method="post">
+																	 <h4>Apa Yang Kamu Renungkan ?</h4>
+																		<div class="form-group" style="padding:14px;">
 
-																			<li>
-																				<a href=""><i class="glyphicon glyphicon-camera"></i></a>
-																			</li>
+																		 <!-- Textarea yang dikirim ke JS Handler -->
+																		 <textarea class="form-control" name="tweet" id="tweet" placeholder="Tulis Di Sini"></textarea>
+																	 </div>
 
-																			<li>
-																				<a href=""><i class="glyphicon glyphicon-map-marker"></i></a>
-																			</li>
-																		</ul>
+																		 <!-- Submit yang dikirim ke JS Handler -->
+																		 <input class="btn btn-primary pull-right" name="btn_tweet" id="btn_tweet" type="button" value="Sebarkan">
+																	 </form>
 
-                                  </form>
+																	 <form class="form-horizontal" role="form">
+																	 <ul class="list-inline">
+																		 <li>
+																			 <a href=""><i class="glyphicon glyphicon-upload" onclick="document.getElementById('upload').click(); return false"></i></a>
+																		 </li>
+
+																		 <li>
+																			 <a href=""><i class="glyphicon glyphicon-camera"></i></a>
+																		 </li>
+
+																		 <li>
+																			 <a href=""><i class="glyphicon glyphicon-map-marker"></i></a>
+																		 </li>
+																	 </ul>
+
+																 </form>
+
                               </div>
                               <!-- Bagian Buat Status -->
 
@@ -448,11 +457,15 @@
     </div>
 </div>
 
-	<!-- script references untuk jsnya -->
+	<!-- script references untuk profil -->
+	<!-- External JS -->
+
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="assets/js/input_handler.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/autoload_chat.js"></script>
+
 
 	</body>
 </html>
