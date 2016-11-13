@@ -116,32 +116,32 @@
 
                <center>
                 <ul class="nav hidden-xs" id="lg-menu">
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 1</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 2</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 3</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 4</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 5</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 6</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 7</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 8</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 9</a></li>
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Teman 0</a></li>
+                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-user"></i> Teman 1</a></li>
+                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-user"></i> Teman 2</a></li>
+                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-user"></i> Teman 3</a></li>
+                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-user"></i> Teman 4</a></li>
+                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-user"></i> Teman 5</a></li>
+                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-user"></i> Teman 6</a></li>
+                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-user"></i> Teman 7</a></li>
+                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-user"></i> Teman 8</a></li>
+                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-user"></i> Teman 9</a></li>
+                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-user"></i> Teman 0</a></li>
 
                 </ul></center>
 
               <!-- tiny only nav-->
               <ul class="nav visible-xs" id="xs-menu">
 
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
+										<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-user"></i></a></li>
+										<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-user"></i></a></li>
+										<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-user"></i></a></li>
+                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-user"></i></a></li>
+                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-user"></i></a></li>
+                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-user"></i></a></li>
+                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-user"></i></a></li>
+                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-user"></i></a></li>
+                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-user"></i></a></li>
+                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-user"></i></a></li>
 
                 </ul>
 
@@ -225,30 +225,30 @@
                                   <p class="lead"><?php echo $this->session->userdata("nama"); ?></p>
                                   <p><?php echo $this->session->userdata("folower"); ?> Followers, <?php echo $this->session->userdata("post"); ?> Posts</p>
 
-                                  <p style="margin-left : 5%;">
-                                    <img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+                                  <p style="margin-left : 3%;">
+                                    <img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px" >
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
                                   </p>
 
-																	<p style="margin-left : 5%;">
-                                    <img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
-																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																	<p style="margin-left : 3%;">
+                                    <img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px" >
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
+																		<img src="assets/images/unnamed.png" width="30px" height="30px">
                                   </p>
 
                                 </div>

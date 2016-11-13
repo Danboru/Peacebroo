@@ -12,17 +12,29 @@
        <a href="#" class="pull-right">Edit</a>
        <img src="assets/images/sponge.jpg" style="width : 40px;">
          <h4><?php echo $this->session->userdata("nama"); ?></h4>
-       <br>
-       <?php echo '<p>'.$status['time'].'</p>'; ?>
+       <?php echo '<p style="font-size : 11px;">'.$status['time'].'</p>'; ?>
      </div>
       <div class="panel-body">
 
         <?php echo '<p>'.$status['isi_status'].'</p>'; ?>
-        <hr>
+          <hr>
+        <div class="likenya">
+            <p>
+              1K<img style="width : 30px; margin-bottom : 0px;" src="assets/images/emo/emo1.jpg" alt="" />
+              2K<img style="width : 30px; margin-bottom : 0px;" src="assets/images/emo/emo2.jpg" alt="" />
+              3K<img style="width : 30px; margin-bottom : 0px;" src="assets/images/emo/emo3.jpg" alt="" />
+              4K<img style="width : 30px; margin-bottom : 0px;" src="assets/images/emo/emo4.jpg" alt="" />
+              5K<img style="width : 30px; margin-bottom : 0px;" src="assets/images/emo/emo5.jpg" alt="" />
+              6K<img style="width : 30px; margin-bottom : 0px;" src="assets/images/emo/emo6.jpg" alt="" />
+            </p>
+        </div>
+
         <form>
         <div class="input-group">
+
           <div class="input-group-btn">
-          <button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
+          <button class="btn btn-default" title="Suka">+1</button>
+          <button class="btn btn-default"><i class="glyphicon glyphicon-share" title="Bagikan"></i></button>
           </div>
           <input type="text" class="form-control" placeholder="Add a comment..">
         </div>
