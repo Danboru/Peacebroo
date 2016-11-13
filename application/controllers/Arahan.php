@@ -53,6 +53,20 @@ class Arahan extends CI_Controller{
     //meload view sesuai dengan url yang di masukkan
 		$this -> load -> view("pages/".$pagenya , $data);
 
-}
+    }
+
+    function tambah(){
+    		$nama = $this->input->post('nama');
+    		$alamat = $this->input->post('alamat');
+    		$pekerjaan = $this->input->post('pekerjaan');
+
+    		$data = array(
+    			'nama' => $nama,
+    			'alamat' => $alamat,
+    			'pekerjaan' => $pekerjaan
+    			);
+
+    		$this->m_data->input_data($data,'user');
+    	}
 
 }

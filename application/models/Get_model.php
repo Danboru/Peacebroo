@@ -29,6 +29,7 @@ class Get_model extends CI_Model{
 
   }
 
+
 	public function get_where_all($table,$where){
 
 		$query = $this->db->get_where($table, $where);

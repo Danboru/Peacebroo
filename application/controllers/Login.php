@@ -1,3 +1,14 @@
+<!--
+    __                       __
+   /\ \                     /\ \
+  _\_\ \      __     __  ___\ \ \__._     ___
+ /, _ . \   /'__`\  /\ \ \  \\ \  __ \   / __`\
+/\  \L\  \ /\ \L\.\_\ \  V   \\ \ \_\ \ /\ \L\ \
+\ \____,__\\ \__/.\_\\ \  /\  \\ \ ___,\\ \____/
+ \/___, _ / \/__/\/_/ \_\_\ \__\\/__,__/ \/___/
+
+-->
+
 <?php
 
 class Login extends CI_Controller{
@@ -26,8 +37,13 @@ class Login extends CI_Controller{
 
 		if($cek > 0){
 			$data_session = array(
-				'nama' => "Danbo",
-				'status' => "Online"
+				'nama' => "Da N Bo",
+				'status' => "Online",
+				'sekolah' => "Universitas Kristen Satyawacana",
+				'alamat' =>  "Salatiga",
+				'pekerjaan' => "Mahasiswa",
+				'folower' => "12.000.000",
+				'post' => "1000"
 				);
 
 			$this->session->set_userdata($data_session);
@@ -40,7 +56,6 @@ class Login extends CI_Controller{
 
 		}
 	}
-
 
 	function logout(){
 		$this->session->sess_destroy();

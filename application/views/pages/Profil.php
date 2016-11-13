@@ -1,3 +1,14 @@
+<!--
+    __                       __
+   /\ \                     /\ \
+  _\_\ \      __     __  ___\ \ \__._     ___
+ /, _ . \   /'__`\  /\ \ \  \\ \  __ \   / __`\
+/\  \L\  \ /\ \L\.\_\ \  V   \\ \ \_\ \ /\ \L\ \
+\ \____,__\\ \__/.\_\\ \  /\  \\ \ ___,\\ \____/
+ \/___, _ / \/__/\/_/ \_\_\ \__\\/__,__/ \/___/
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -21,7 +32,10 @@
 	<!-- Bagian popup Chatnya -->
 	<div id="panggil_chat">
 		<div class="shout_box">
-		<div class="header"><?php echo $this->session->userdata("status"); ?> <div class="close_btn">&nbsp;</div></div>
+			<div id="status" style="padding-top : 5px; padding-bottom : 5px;"><div class="circle_green"></div> </div>
+
+		<div class="header">
+			<?php echo $this->session->userdata("status"); ?> <div class="close_btn">&nbsp;</div></div>
 		  <div class="toggle_chat">
 		  <div class="message_box">
 		    </div>
@@ -45,38 +59,39 @@
 	  <div class="modal-content">
 	      <div class="modal-header">
 	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				Update Keadaan
+				Upload File
 	      </div>
 	      <div class="modal-body">
 
-	          <form class="form center-block">
-	            <div class="form-group">
-	              <textarea class="form-control input-lg" name="tweet" id="tweet" placeholder="Apa yang kamu Renungkan?"></textarea>
-	            </div>
-	          </form>
+					<div class="well">
+
+						 <form method="post" enctype="multipart/form-data" action="<?php echo base_url('input/upload');?>">
+
+								<textarea class="form-control" name="keterangan" placeholder="Masukkan Keterangan" style="width : 100%; height : 40px; "></textarea>
+								<br>
+									<input type="file" name="inputgambar">
+								<br>
+									<input type="submit"  value="Upload" class="btn btn-primary" style="width : 100%;">
+
+						 </form>
+				 </div>
 
 	      </div>
-	      <div class="modal-footer">
-	          <div>
+				
+				<!-- <div class="modal-footer">
+					Bagian Footer modalnya
 
-	            <input class="btn btn-primary pull-right" name="btn_tweet" id="btn_tweet" type="button" value="Sebarkan">
+					<div class="well">
 
-							<ul class="pull-left list-inline">
-								<li>
-									<a href=""><i class="glyphicon glyphicon-upload" onclick="document.getElementById('upload').click(); return false"></i></a>
-								</li>
+						 <form method="post" enctype="multipart/form-data" action="<?php echo base_url('input/upload');?>">
 
-								<li>
-									<a href=""><i class="glyphicon glyphicon-camera"></i></a>
-								</li>
+								<input type="submit"  value="Upload" class="btn btn-primary" style="width : 100%;">
 
-								<li>
-									<a href=""><i class="glyphicon glyphicon-map-marker"></i></a>
-								</li>
+						 </form>
+				 </div>
 
-						 </ul>
+			  </div> -->
 
-			  </div>
 	      </div>
 	  </div>
 	  </div>
@@ -168,7 +183,7 @@
                         <a href="#"><i class="glyphicon glyphicon-home"></i> Beranda</a>
                       </li>
                       <li>
-                        <a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Status</a>
+                        <a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Upload</a>
                       </li>
                       <li>
                         <a href="#"><span class="badge">Pesan</span></a>
@@ -208,11 +223,34 @@
                                 <div class="panel-thumbnail"><img src="assets/images/sponge.jpg" class="img-responsive"></div>
                                 <div class="panel-body">
                                   <p class="lead"><?php echo $this->session->userdata("nama"); ?></p>
-                                  <p>3125 Followers, 532 Posts</p>
+                                  <p><?php echo $this->session->userdata("folower"); ?> Followers, <?php echo $this->session->userdata("post"); ?> Posts</p>
 
-                                  <p>
+                                  <p style="margin-left : 5%;">
                                     <img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
                                   </p>
+
+																	<p style="margin-left : 5%;">
+                                    <img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+																		<img src="assets/images/unnamed.png" width="28px" height="28px">
+                                  </p>
+
                                 </div>
                               </div>
                               	<!-- Bagian Foto Profile -->
@@ -252,7 +290,7 @@
                               </div>
                               <!-- Bagian Buat Status -->
 
-															<!-- Bagian Upload File -->
+															<!-- Bagian Upload File
 															<div class="well">
 
 																 <form method="post" enctype="multipart/form-data" action="<?php echo base_url('input/upload');?>">
@@ -265,15 +303,15 @@
 
 																 </form>
 														 </div>
-															<!-- Bagian Upload File -->
+															Bagian Upload File -->
 
                               <div class="panel panel-default">
                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Intro</h4></div>
                                   <div class="panel-body">
                                     <div class="list-group">
-                                      <a href="#" class="list-group-item">Sekolah</a>
-                                      <a href="#" class="list-group-item">Alamat</a>
-                                      <a href="#" class="list-group-item">Pekerjaan</a>
+                                      <a href="#" class="list-group-item"><p><?php echo $this->session->userdata("sekolah"); ?></p></a>
+                                      <a href="#" class="list-group-item"><p><?php echo $this->session->userdata("alamat"); ?></p></a>
+                                      <a href="#" class="list-group-item"><p><?php echo $this->session->userdata("pekerjaan"); ?></p></a>
                                     </div>
                                   </div>
                               </div>
