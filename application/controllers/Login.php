@@ -26,7 +26,7 @@ class Login extends CI_Controller{
 
 		if($cek > 0){
 			$data_session = array(
-				'nama' => "Da N Bo",
+				'nama' => "Danbo",
 				'status' => "Online"
 				);
 

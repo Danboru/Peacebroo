@@ -39,8 +39,7 @@
 	<!-- popup upload file -->
 
 
-
-	<!--Popup update statusny-->
+	<!--Popup update statusnya -->
 	<div id="postModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-dialog">
 	  <div class="modal-content">
@@ -49,15 +48,18 @@
 				Update Keadaan
 	      </div>
 	      <div class="modal-body">
+
 	          <form class="form center-block">
 	            <div class="form-group">
-	              <textarea class="form-control input-lg" autofocus="" placeholder="Apa yang kamu Renungkan?"></textarea>
+	              <textarea class="form-control input-lg" name="tweet" id="tweet" placeholder="Apa yang kamu Renungkan?"></textarea>
 	            </div>
 	          </form>
+
 	      </div>
 	      <div class="modal-footer">
 	          <div>
-	          <button class="btn btn-primary btn-sm" data-dismiss="modal" id="update_status" aria-hidden="true">Sebarkan</button>
+
+	            <input class="btn btn-primary pull-right" name="btn_tweet" id="btn_tweet" type="button" value="Sebarkan">
 
 							<ul class="pull-left list-inline">
 								<li>
@@ -73,6 +75,7 @@
 								</li>
 
 						 </ul>
+
 			  </div>
 	      </div>
 	  </div>
@@ -314,13 +317,13 @@
 													<!-- /main col kiri -->
 
 													<!-- Container status keseluruhan -->
-													<div id="statusny">
+													<div id="container_statusnya">
                           <!-- Bagian Utama -->
                           <div class="col-sm-7">
+														<!-- Bagian View Status Secara dinamis -->
 
-														<?php
-
-														foreach ( $isi_status as $status) {  ?>
+														<!-- php_open() -->
+														<?php foreach ( $isi_status as $status) {  ?>
 
 														 <!-- Bagian View Status -->
 														 <div class="panel panel-default">
@@ -328,7 +331,6 @@
 																<div class="panel-body">
 
 																	<?php echo '<p>'.$status['isi_status'].'</p>'; ?>
-
 																	<hr>
 																	<form>
 																	<div class="input-group">
@@ -338,14 +340,12 @@
 																		<input type="text" class="form-control" placeholder="Add a comment..">
 																	</div>
 																	</form>
-
 																</div>
 														 </div>
-														 <!-- Bagian View Status -->
+														 <!-- Bagian View Status Secara dinamis -->
 
-
-															<?php }
-														 ?>
+															<?php } ?>
+														 <!-- php_close() -->
 
                           </div>
 													</div>

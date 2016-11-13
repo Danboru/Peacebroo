@@ -2,8 +2,6 @@
 
 foreach ( $isi_status as $status) {  ?>
 
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
  <!-- Bagian View Status -->
  <div class="panel panel-default">
    <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4><?php echo $this->session->userdata("nama"); ?></h4></div>
