@@ -34,7 +34,7 @@
 	<!-- /Bagian popup Chatnya -->
 
 	<!-- popup upload file -->
-	<input type="file" id="upload" name="upload" style="visibility: hidden; width: 1px; height: 1px" multiple />
+	<input type="file" id="upload" name="upload_file" style="visibility: hidden; width: 1px; height: 1px" multiple />
 	<!-- popup upload file -->
 
 
@@ -154,7 +154,7 @@
                       </button>
 
                       <!-- Bagian Logo -->
-                      <a href="/" class="navbar-brand logo">P</a>
+                      <a href="http://danboru.dev/Peacebroo/profil" class="navbar-brand logo">P</a>
                       <!-- Bagian Logo -->
 
                   	</div>
@@ -218,7 +218,7 @@
                                   <p>3125 Followers, 532 Posts</p>
 
                                   <p>
-                                    <img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px">
+                                    <img src="assets/images/unnamed.png" width="28px" height="28px">
                                   </p>
                                 </div>
                               </div>
@@ -250,6 +250,19 @@
                                   </form>
                               </div>
                               <!-- Bagian Buat Status -->
+
+															<!-- Bagian Upload File -->
+															<div class="well">
+
+																 <form method="post" enctype="multipart/form-data" action="<?php echo base_url('input/upload');?>">
+
+																	  <input type="file" name="inputgambar">
+																	 	<textarea name="keterangan" placeholder="Masukkan Keterangan"></textarea>
+																		<input type="submit"  value="Upload" class="btn btn-primary">
+
+																 </form>
+														 </div>
+															<!-- Bagian Upload File -->
 
                               <div class="panel panel-default">
                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Intro</h4></div>

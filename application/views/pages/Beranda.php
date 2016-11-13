@@ -203,7 +203,7 @@
                       <hr>
 
                       <h4 class="text-center">
-                      <p>Privacy</p>
+                      <p>Beranda</p>
                       </h4>
 
                       <hr>
