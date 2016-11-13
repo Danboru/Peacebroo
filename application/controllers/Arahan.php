@@ -14,26 +14,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Arahan extends CI_Controller{
 
+  public function __construct(){
+
+    parent::__construct();
+
+    //model yang di gunakan
+    $this -> load -> model('insert_model');
+    $this -> load -> model('update_model');
+    $this -> load -> model('delete_model');
+    $this -> load -> model('view_model');
+
+    //helper yang di gunakan
+    $this -> load -> helper('url_helper');
+
+  }
 
   public function index()
 	{
+    $this->load->view("login");
 
-  		$this->load->view("profil");
 	}
 
+  //function dinamis view lihat di config/Router ----> $router[(:any)] = "view/pages/$1"
+  public function view($pagenya = 'login'){
 
-public function view($pagenya = 'login'){
+  //variable sebagai penampung data yang akan di kirim
+  $data['isi_status'] = $this->view_model->view_all();//class->model->function
+  $data['judul'] = "Statusnya";
 
+  //melihat apakah dta ada di dalam view
   if(!file_exists(APPPATH."views/pages/".$pagenya.'.php')){
 
+    //fungsi bawaan
 			show_404();
 
 		}
 
-		$this->load->view("pages/".$pagenya);
+    //meload view sesuai dengan url yang di masukkan
+		$this -> load -> view("pages/".$pagenya , $data);
 
 }
-
-
 
 }
