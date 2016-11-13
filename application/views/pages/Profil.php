@@ -124,17 +124,6 @@
                   	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
                   	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
 
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-
                 </ul>
 
             </div>
@@ -212,7 +201,7 @@
 
                            	<!-- Bagian Foto Profile -->
                               <div class="panel panel-default">
-                                <div class="panel-thumbnail"><img src="assets/images/profile.jpg" class="img-responsive"></div>
+                                <div class="panel-thumbnail"><img src="assets/images/sponge.jpg" class="img-responsive"></div>
                                 <div class="panel-body">
                                   <p class="lead"><?php echo $this->session->userdata("nama"); ?></p>
                                   <p>3125 Followers, 532 Posts</p>
@@ -256,9 +245,11 @@
 
 																 <form method="post" enctype="multipart/form-data" action="<?php echo base_url('input/upload');?>">
 
-																	  <input type="file" name="inputgambar">
-																	 	<textarea name="keterangan" placeholder="Masukkan Keterangan"></textarea>
-																		<input type="submit"  value="Upload" class="btn btn-primary">
+																	 	<textarea class="form-control" name="keterangan" placeholder="Masukkan Keterangan" style="width : 100%; height : 40px; "></textarea>
+																		<br>
+																		  <input type="file" name="inputgambar">
+																			<br>
+																		<input type="submit"  value="Upload" class="btn btn-primary" style="width : 100%;">
 
 																 </form>
 														 </div>
@@ -289,12 +280,12 @@
 
                               <div class="panel panel-default">
                                  <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Foto Anda</h4></div>
-                                  <div class="panel-body" style="padding-right: 60px; padding-bottom: 20px;">
+                                  <div class="panel-body" style="padding-right: 50px; padding-bottom: 20px;">
 
-                                    <img src="assets/images/images.png" class="img-rectangle pull-right"> <a href="#"></a>
-																		<img src="assets/images/images.png" class="img-rectangle pull-right"> <a href="#"></a>
-																		<img src="assets/images/images.png" class="img-rectangle pull-right"> <a href="#"></a>
-																		<img src="assets/images/images.png" class="img-rectangle pull-right"> <a href="#"></a>
+                                    <img src="assets/images/images1.png" class="img-rectangle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images2.png" class="img-rectangle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images3.png" class="img-rectangle pull-right"> <a href="#"></a>
+																		<img src="assets/images/images4.png" class="img-rectangle pull-right"> <a href="#"></a>
 
                                   </div>
                               </div>

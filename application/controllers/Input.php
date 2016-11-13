@@ -28,8 +28,15 @@ class Input extends CI_Controller {
 
 		$this->load->library('upload', $config);
 		if( !$this->upload->do_upload()){
-			$error = $this->upload->display_errors("Terjadi kesalahan saat Upload File ");
-			echo $error;
+			$error = $this->upload->display_errors();
+			$pesan = "Gagal Upload File";
+
+			echo "<script type='text/javascript'>
+								alert('$pesan');
+						</script>";
+
+						redirect(base_url('server_down'));
+
 		}else{
 			$file = $this->upload->file_name;
 			$ket = $this->input->post('keterangan');
@@ -42,6 +49,7 @@ class Input extends CI_Controller {
       echo $ket;
 
 		}
+
 	}
 
 }
