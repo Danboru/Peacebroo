@@ -107,9 +107,7 @@
 		</div>
 	<!--Popup Kamera -->
 
-
-
-	<!--Popup Peta -->
+	<!--Popup Upload -->
 	<div id="postModalUpload" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-dialog">
 	  <div class="modal-content">
@@ -151,6 +149,43 @@
 	  </div>
 	  </div>
 	<!-- Popup upload data -->
+
+
+	<!--Popup Intro -->
+	<div id="postModalIntro" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog">
+	  <div class="modal-content">
+	      <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				Sesuaikan Intro Anda
+	      </div>
+	      <div class="modal-body">
+
+					<div class="well">
+
+						
+
+				 </div>
+
+	      </div>
+
+				<!-- <div class="modal-footer">
+
+					<div class="well">
+
+						 <form method="post" enctype="multipart/form-data" action="<?php echo base_url('input/upload');?>">
+
+								<input type="submit"  value="Upload" class="btn btn-primary" style="width : 100%;">
+
+						 </form>
+				 </div>
+
+			 </div> -->
+
+	      </div>
+	  </div>
+	  </div>
+	<!-- Popup intro -->
 
 
 	<!-- bagian popup berakhir di sini -->
@@ -310,6 +345,12 @@
                               </div>
                               	<!-- Bagian Foto Profile -->
 
+																<div class="well">
+
+																	<center><a href="#" onclick="toggle_visibility('panggil_chat');">Hide Chat</a></center>
+
+																</div>
+
                               	<!-- Bagian Buat Status -->
                               	<div class="well">
 
@@ -362,7 +403,13 @@
 															Bagian Upload File -->
 
                               <div class="panel panel-default">
-                                <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Intro</h4></div>
+                                <div class="panel-heading">
+
+																<a href="#postModalIntro" role="button" data-toggle="modal" class="pull-right">Edit</a>
+
+
+
+																	<h4>Intro</h4></div>
                                   <div class="panel-body">
                                     <div class="list-group">
                                       <a href="#" class="list-group-item"><p><?php echo $this->session->userdata("sekolah"); ?></p></a>
@@ -385,7 +432,20 @@
                                 <!-- Update Email -->
 
                               <div class="panel panel-default">
-                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4>Foto Anda</h4></div>
+                                 <div class="panel-heading">
+
+																	 <!--<a href="#" class="pull-right">Edit</a>-->
+
+																	 <ul class="nav navbar-nav navbar-right">
+ 																	<li class="dropdown">
+ 						                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Edit</a>
+ 						                        <ul class="dropdown-menu">
+ 						                          <li><a href="#">Lihat Foto Tersembunyi</a></li>
+ 						                        </ul>
+ 						                      </li>
+ 																</ul>
+
+																	 <h4>Foto Anda</h4></div>
                                   <div class="panel-body" style="padding-right: 50px; padding-bottom: 20px;">
 
                                     <img src="assets/images/images1.png" class="img-rectangle pull-right"> <a href="#"></a>
@@ -445,6 +505,17 @@
 </div>
 
 	<!-- script references untuk profil -->
+
+	<script type="text/javascript">
+	function toggle_visibility(id) {
+	   var e = document.getElementById(id);
+	   if(e.style.display == 'block')
+	      e.style.display = 'none';
+	   else
+	      e.style.display = 'block';
+	}
+	</script>
+
 	<!-- External JS -->
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>

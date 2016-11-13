@@ -9,7 +9,25 @@
    <!-- Bagian View Status -->
    <div class="panel panel-default">
      <div class="panel-heading">
-       <a href="#" class="pull-right">Edit</a>
+
+       <ul class="nav navbar-nav navbar-right">
+       <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Edit</a>
+         <ul class="dropdown-menu">
+           <li><a href="#">Simpan Kiriman</a></li>
+           <hr>
+           <li><a href="#">Sunting Kiriman</a></li>
+           <li><a href="#">Ubah Tanggal</a></li>
+           <li><a href="#">Benamkan</a></li>
+           <li><a href="#">Nonaktifkan Pemberitahuan</a></li>
+           <hr>
+           <li><a href="#">Sembunyikan dari Kronologi</a></li>
+           <li><a href="#">Hapus</a></li>
+           <li><a href="#">Nonaktifkan Terjemahan</a></li>
+         </ul>
+       </li>
+     </ul>
+
        <img src="assets/images/sponge.jpg" style="width : 40px;">
          <h4><?php echo $this->session->userdata("nama"); ?></h4>
        <?php echo '<p style="font-size : 11px;">'.$status['time'].'</p>'; ?>
