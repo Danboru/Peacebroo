@@ -38,7 +38,7 @@
 <div class="loginbox radius">
   <center><img src="assets/images/like_broken.jpg" alt="Server Error" style="width : 100px; height : 100px;" /></center>
   <br>
-<h4 style="color:#141823; text-align:center; font-size : 30px;">Maaf, Kesalahan sedang terjadi</h4>
+<h4 style="color:#141823; text-align:center; font-size : 30px;">Maaf, Ada Kesalahan</h4>
 	<div class="loginboxinner radius">
     	<div class="loginheader">
     		<h4 class="title">Kami akan berusaha untuk memperbaikinya</h4>

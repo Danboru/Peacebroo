@@ -313,117 +313,39 @@
                           </div>
 													<!-- /main col kiri -->
 
-													<!-- Container status keselluruhan -->
+													<!-- Container status keseluruhan -->
 													<div id="statusny">
                           <!-- Bagian Utama -->
                           <div class="col-sm-7">
 
-                               <!-- Bagian View Status -->
-                               <div class="panel panel-default">
-                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4><?php echo $this->session->userdata("nama"); ?></h4></div>
-                                  <div class="panel-body">
+														<?php
 
-                                    <p>Terkadang, kamu berusaha menghindari sesuatu, bukan berarti kamu membencinya. Kamu menginginkannya tapi kamu tahu bahwa itu salah.</p>
+														foreach ( $isi_status as $status) {  ?>
 
-                                    <hr>
-                                    <form>
-                                    <div class="input-group">
-                                      <div class="input-group-btn">
-                                      <button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
-                                      </div>
-                                      <input type="text" class="form-control" placeholder="Add a comment..">
-                                    </div>
-                                    </form>
+														 <!-- Bagian View Status -->
+														 <div class="panel panel-default">
+															 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4><?php echo $this->session->userdata("nama"); ?></h4></div>
+																<div class="panel-body">
 
-                                  </div>
-                               </div>
-                               <!-- Bagian View Status -->
+																	<?php echo '<p>'.$status['isi_status'].'</p>'; ?>
 
-                                <!-- Bagian View Status -->
-                               <div class="panel panel-default">
-                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4><?php echo $this->session->userdata("nama"); ?></h4></div>
-                                  <div class="panel-body">
+																	<hr>
+																	<form>
+																	<div class="input-group">
+																		<div class="input-group-btn">
+																		<button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
+																		</div>
+																		<input type="text" class="form-control" placeholder="Add a comment..">
+																	</div>
+																	</form>
 
-                                    <p>Jangan pernah meremehkan diri sendiri. Jika kamu tidak bahagia dengan hidupmu, perbaiki apa yang salah, dan teruslah melangkah.</p>
-
-                                    <hr>
-                                    <form>
-                                    <div class="input-group">
-                                      <div class="input-group-btn">
-                                      <button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
-                                      </div>
-                                      <input type="text" class="form-control" placeholder="Add a comment..">
-                                    </div>
-                                    </form>
-
-                                  </div>
-                               </div>
-                               <!-- Bagian View Status -->
-
-                                <!-- Bagian View Status -->
-                               <div class="panel panel-default">
-                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4><?php echo $this->session->userdata("nama"); ?></h4></div>
-                                  <div class="panel-body">
-
-                                    <p>Meratapi dan menyesali masa lalu tidak akan mengubah apa pun. Bangkit dan perbaiki setiap kesalahan yang ada.</p>
-
-                                    <hr>
-                                    <form>
-                                    <div class="input-group">
-                                      <div class="input-group-btn">
-                                      <button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
-                                      </div>
-                                      <input type="text" class="form-control" placeholder="Add a comment..">
-                                    </div>
-                                    </form>
-
-                                  </div>
-                               </div>
-                               <!-- Bagian View Status -->
+																</div>
+														 </div>
+														 <!-- Bagian View Status -->
 
 
-                                <!-- Bagian View Status -->
-                               <div class="panel panel-default">
-                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4><?php echo $this->session->userdata("nama"); ?></h4></div>
-                                  <div class="panel-body">
-
-                                    <p>Jika kalian gagal mendapatkan sesuatu, maka hanya satu hal yang harus kalian lakukan, coba lagi!</p>
-
-                                    <hr>
-                                    <form>
-                                    <div class="input-group">
-                                      <div class="input-group-btn">
-                                      <button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
-                                      </div>
-                                      <input type="text" class="form-control" placeholder="Add a comment..">
-                                    </div>
-                                    </form>
-
-                                  </div>
-                               </div>
-                               <!-- Bagian View Status -->
-
-
-                                <!-- Bagian View Status -->
-                               <div class="panel panel-default">
-                                 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4><?php echo $this->session->userdata("nama"); ?></h4></div>
-                                  <div class="panel-body">
-
-                                    <p>Jangan takut akan perubahan. Kita mungkin kehilangan sesuatu yang baik, namun kita akan peroleh sesuatu yang lebih baik lagi.</p>
-
-                                    <hr>
-                                    <form>
-                                    <div class="input-group">
-                                      <div class="input-group-btn">
-                                      <button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
-                                      </div>
-                                      <input type="text" class="form-control" placeholder="Add a comment..">
-                                    </div>
-                                    </form>
-
-                                  </div>
-                               </div>
-                               <!-- Bagian View Status -->
+															<?php }
+														 ?>
 
                           </div>
 													</div>

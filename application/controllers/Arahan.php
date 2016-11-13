@@ -22,7 +22,7 @@ class Arahan extends CI_Controller{
     $this -> load -> model('insert_model');
     $this -> load -> model('update_model');
     $this -> load -> model('delete_model');
-    $this -> load -> model('view_model');
+    $this -> load -> model('get_model');
 
     //helper yang di gunakan
     $this -> load -> helper('url_helper');
@@ -38,8 +38,8 @@ class Arahan extends CI_Controller{
   //function dinamis view lihat di config/Router ----> $router[(:any)] = "view/pages/$1"
   public function view($pagenya = 'login'){
 
-  //variable sebagai penampung data yang akan di kirim
-  $data['isi_status'] = $this->view_model->view_all();//class->model->function
+  // parameter $data harus sama dengan nama entitas
+  $data['isi_status'] = $this->get_model->get_all();//class->model->function
   $data['judul'] = "Statusnya";
 
   //melihat apakah dta ada di dalam view
