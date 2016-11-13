@@ -3,7 +3,7 @@ $(document).ready(function() {
 	// load messages every 1000 milliseconds from server.
 	load_data = {'fetch':1};
 	window.setInterval(function(){
-	 $.post('../application/models/shout.php', load_data,  function(data) {
+	 $.post('shout.php', load_data,  function(data) {
 		$('.message_box').html(data);
 		var scrolltoh = $('.message_box')[0].scrollHeight;
 		$('.message_box').scrollTop(scrolltoh);

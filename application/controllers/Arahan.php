@@ -23,6 +23,7 @@ class Arahan extends CI_Controller{
     $this -> load -> model('update_model');
     $this -> load -> model('delete_model');
     $this -> load -> model('get_model');
+    //$this -> load -> model('shout_model');
 
     //helper yang di gunakan
     $this -> load -> helper('url_helper');
@@ -57,10 +58,14 @@ class Arahan extends CI_Controller{
 
     function tambah(){
     		$status_nya = $this -> input -> post('tweet');
+        $waktunya = date('h:i A M d',time());
+        $komentar = "Ini adalah komentar";
 
     		$data = array(
 
-    			'isi_status' => $status_nya
+    			'isi_status' => $status_nya,
+          'time' => $waktunya,
+          'komentar' => $komentar
 
     			);
 

@@ -50,15 +50,15 @@ class Input extends CI_Controller {
 
 		}else{
 			$file = $this->upload->file_name;
-			$ket = $this->input->post('keterangan');
+			$ket = $this->input->post('ket');
 			$tgl = date('Y-m-d H:i:s');
 			$data = array('file' => $file,
-				'ket' => $keterangan,
+				'ket' => $ket,
 				'tgl' => $tgl);
 			$sukses = "Successfully Uploloaded";
 			echo $sukses;
-      echo $ket;
-
+			echo $ket;
+			echo $tgl;
 		}
 
 	}
