@@ -53,8 +53,64 @@
 	<!-- popup upload file -->
 
 
-	<!--Popup upload data -->
-	<div id="postModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+	<!--Popup Map -->
+	<div id="postModalPeta" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog">
+	  <div class="modal-content">
+	      <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				Location
+	      </div>
+	      <div class="modal-body">
+
+					<img src="assets/images/map.png" alt=""/ style="width: 100%; height : 100%;">
+
+	      </div>
+
+				<div class="modal-footer">
+
+					<div class="well">
+
+						 <form method="post" enctype="multipart/form-data" action="<?php echo base_url('input/upload');?>">
+
+								<input type="submit"  value="Select Location" class="btn btn-primary" style="width : 100%;">
+
+						 </form>
+				 </div>
+
+			  </div>
+
+	      </div>
+	  </div>
+	  </div>
+	<!-- Popup Map -->
+
+
+	<!--Popup Kamera -->
+	<div id="postModalKamera" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" >
+		<div class="modal-dialog">
+		<div class="modal-content">
+				<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				Kamera
+				</div>
+
+				<div class="modal-body">
+
+						<img src="assets/images/atas.png" alt=""/ style="width: 100%; height : 100px;">
+						<div class="bagian_foto" style="height: 200px;"></div>
+						<img src="assets/images/bawah.png" alt=""/ style="width: 100%; height:200px">
+
+				</div>
+				</div>
+		</div>
+		</div>
+	<!--Popup Kamera -->
+
+
+
+	<!--Popup Peta -->
+	<div id="postModalUpload" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-dialog">
 	  <div class="modal-content">
 	      <div class="modal-header">
@@ -79,7 +135,6 @@
 	      </div>
 
 				<!-- <div class="modal-footer">
-					Bagian Footer modalnya
 
 					<div class="well">
 
@@ -90,13 +145,13 @@
 						 </form>
 				 </div>
 
-			  </div> -->
+			 </div> -->
 
 	      </div>
 	  </div>
 	  </div>
-	</div>
 	<!-- Popup upload data -->
+
 
 	<!-- bagian popup berakhir di sini -->
 
@@ -183,7 +238,7 @@
                         <a href="#"><i class="glyphicon glyphicon-home"></i> Beranda</a>
                       </li>
                       <li>
-                        <a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Upload</a>
+                        <a href="#postModalUpload" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Upload</a>
                       </li>
                       <li>
                         <a href="#"><span class="badge">Pesan</span></a>
@@ -278,11 +333,11 @@
 																		 </li>
 
 																		 <li>
-																			 <a href=""><i class="glyphicon glyphicon-camera"></i></a>
+																			 <a href="#postModalKamera" role="button" data-toggle="modal"><i class="glyphicon glyphicon-camera"></i></a>
 																		 </li>
 
 																		 <li>
-																			 <a href=""><i class="glyphicon glyphicon-map-marker"></i></a>
+																			 <a href="#postModalPeta" role="button" data-toggle="modal"><i class="glyphicon glyphicon-map-marker"></i></a>
 																		 </li>
 																	 </ul>
 
