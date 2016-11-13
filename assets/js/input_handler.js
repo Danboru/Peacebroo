@@ -5,9 +5,9 @@ $(document).ready(function(){
           if($.trim(tweet_txt) != '')
           {
                $.ajax({
-                    url:"insert.php",
+                    url:"<?php echo base_url('arahan/tambah');?>",
                     method:"POST",
-                    data:{tweet:tweet_txt},
+                    data:{tweet : tweet_txt},
                     dataType:"text",
                     success:function(data)
                     {
@@ -24,6 +24,6 @@ $(document).ready(function(){
      });
 
      setInterval(function(){
-          $('#load_tweets').load("fetch.php").fadeIn("slow");
+          $('#container_statusnya').load("http://danboru.dev/Peacebroo/fetch").fadeIn("slow");
      }, 1000);
 });

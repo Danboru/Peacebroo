@@ -53,7 +53,7 @@
 	<!-- popup upload file -->
 
 
-	<!--Popup update statusnya -->
+	<!--Popup upload data -->
 	<div id="postModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-dialog">
 	  <div class="modal-content">
@@ -77,7 +77,7 @@
 				 </div>
 
 	      </div>
-				
+
 				<!-- <div class="modal-footer">
 					Bagian Footer modalnya
 
@@ -96,7 +96,7 @@
 	  </div>
 	  </div>
 	</div>
-	<!--Popup update statusny-->
+	<!-- Popup upload data -->
 
 	<!-- bagian popup berakhir di sini -->
 
@@ -268,6 +268,7 @@
 
 																		 <!-- Submit yang dikirim ke JS Handler -->
 																		 <input class="btn btn-primary pull-right" name="btn_tweet" id="btn_tweet" type="button" value="Sebarkan">
+
 																	 </form>
 
 																	 <form class="form-horizontal" role="form">
@@ -356,41 +357,12 @@
 
 													<!-- Container status keseluruhan -->
 													<div id="container_statusnya">
-                          <!-- Bagian Utama -->
-                          <div class="col-sm-7">
-														<!-- Bagian View Status Secara dinamis -->
 
-														<!-- php_open() -->
-														<?php foreach ( $isi_status as $status) {  ?>
-
-														 <!-- Bagian View Status -->
-														 <div class="panel panel-default">
-															 <div class="panel-heading"><a href="#" class="pull-right">Edit</a> <h4><?php echo $this->session->userdata("nama"); ?></h4></div>
-																<div class="panel-body">
-
-																	<?php echo '<p>'.$status['isi_status'].'</p>'; ?>
-																	<hr>
-																	<form>
-																	<div class="input-group">
-																		<div class="input-group-btn">
-																		<button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
-																		</div>
-																		<input type="text" class="form-control" placeholder="Add a comment..">
-																	</div>
-																	</form>
-																</div>
-														 </div>
-														 <!-- Bagian View Status Secara dinamis -->
-
-															<?php } ?>
-														 <!-- php_close() -->
-
-                          </div>
+                        	<!-- me-load fetch.php -->
+													
 													</div>
 
                        </div>
-                       <!-- Bagian Utama -->
-
 
                         <!-- Bagian Footernya -->
                         <div class="row" id="footer">

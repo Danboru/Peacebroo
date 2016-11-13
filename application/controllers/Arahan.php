@@ -56,17 +56,15 @@ class Arahan extends CI_Controller{
     }
 
     function tambah(){
-    		$nama = $this->input->post('nama');
-    		$alamat = $this->input->post('alamat');
-    		$pekerjaan = $this->input->post('pekerjaan');
+    		$status_nya = $this -> input -> post('tweet');
 
     		$data = array(
-    			'nama' => $nama,
-    			'alamat' => $alamat,
-    			'pekerjaan' => $pekerjaan
+
+    			'isi_status' => $status_nya
+
     			);
 
-    		$this->m_data->input_data($data,'user');
+    		$this->insert_model->input_data($data,'status');
     	}
 
 }
