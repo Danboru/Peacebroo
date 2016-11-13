@@ -5,9 +5,9 @@ $(document).ready(function(){
           if($.trim(tweet_txt) != '')
           {
                $.ajax({
-                    url:"<?php echo base_url('arahan/tambah');?>",
+                    url:"http://danboru.dev/Peacebroo/arahan/tambah",
                     method:"POST",
-                    data:{tweet : tweet_txt},
+                    data:{tweet:tweet_txt},
                     dataType:"text",
                     success:function(data)
                     {
@@ -17,7 +17,7 @@ $(document).ready(function(){
           }
           else {
 
-           alert("Isi status terlebih dulu");
+           alert("Isi data terlebih dulu");
 
           }
 
