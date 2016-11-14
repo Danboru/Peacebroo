@@ -32,7 +32,7 @@ class Arahan extends CI_Controller{
 
   public function index()
 	{
-    $this->load->view("login");
+    $this->load->view("profil");
 
 	}
 
@@ -43,7 +43,7 @@ class Arahan extends CI_Controller{
   $data['isi_status'] = $this->get_model->get_all();//class->model->function
   $data['judul'] = "Statusnya";
 
-  //melihat apakah dta ada di dalam view
+  //melihat apakah data ada di dalam view
   if(!file_exists(APPPATH."views/pages/".$pagenya.'.php')){
 
     //fungsi bawaan
@@ -56,7 +56,8 @@ class Arahan extends CI_Controller{
 
     }
 
-    function tambah(){
+    //fungsi tambah
+    public function tambah(){
     		$status_nya = $this -> input -> post('tweet');
         $waktunya = date('h:i A M d',time());
         $komentar = "Ini adalah komentar";
@@ -71,5 +72,13 @@ class Arahan extends CI_Controller{
 
     		$this->insert_model->input_data($data,'status');
     	}
+
+      //fungsi hapus
+      public function hapus( $id ){
+
+	        $where = array('id_status' => $id);//nama atribute
+
+	        $this->delete_model->hapus_data($where,'status');
+        }
 
 }
