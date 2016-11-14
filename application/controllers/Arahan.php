@@ -32,7 +32,8 @@ class Arahan extends CI_Controller{
 
   public function index()
 	{
-    $this->load->view("pages/tampil_data");
+      $data['isi_status'] = $this->get_model->get_all();
+    //$this->load->view("pages/tampil_data",$data);
 
 	}
 
@@ -75,8 +76,7 @@ class Arahan extends CI_Controller{
 
       //fungsi hapus
       public function hapus( $id_nya ){
-        $id_nya = 4;
-
+        $id_nya = 1;
 	        $where = array('id_status' => $id_nya);//nama atribute
 
 	        $this->delete_model->hapus_data($where,'status');

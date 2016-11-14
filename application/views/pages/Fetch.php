@@ -22,7 +22,7 @@
            <li><a href="#">Nonaktifkan Pemberitahuan</a></li>
            <hr>
            <li><a href="#">Sembunyikan dari Kronologi</a></li>
-           <?php echo anchor('arahan/hapus/'. $status -> id_nya, 'Hapus'); ?>
+           <li><?php echo anchor('arahan/hapus/'.$status['id_status'], 'Hapus'); ?></li>
            <li><a href="#">Nonaktifkan Terjemahan</a></li>
          </ul>
        </li>
