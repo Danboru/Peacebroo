@@ -15,7 +15,7 @@ foreach ( $isi_status as $status) {  ?>
 
  <!-- Bagian View Status -->
  <div class="panel panel-default">
-   <div class="panel-heading"><?php echo anchor('arahan/hapus/'. $status->id_nya, 'Hapus'); ?><h4><?php echo $this->session->userdata("nama"); ?></h4></div>
+   <div class="panel-heading"><?php echo anchor('arahan/hapus/'. $status -> id_nya, 'Hapus'); ?><h4><?php echo $this->session->userdata("nama"); ?></h4></div>
     <div class="panel-body">
 
       <?php echo '<p>'.$status['isi_status'].'</p>'; ?>
@@ -33,7 +33,6 @@ foreach ( $isi_status as $status) {  ?>
     </div>
  </div>
  <!-- Bagian View Status -->
-
 
   <?php }
  ?>
