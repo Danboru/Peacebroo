@@ -119,11 +119,11 @@
 
 					<div class="well">
 
-						 <form method="post" enctype="multipart/form-data" action="<?php echo base_url('input/upload');?>">
+						 <form method="post" enctype="multipart/form-data" action="<?php echo base_url().'input/upload';?>">
 
 								<textarea class="form-control" name="keterangan" placeholder="Masukkan Keterangan" style="width : 100%; height : 40px; "></textarea>
 								<br>
-									<input type="file" name="inputgambar">
+									<input type="file" name="userfile">
 								<br>
 									<input type="submit"  value="Upload" class="btn btn-primary" style="width : 100%;">
 
@@ -136,7 +136,7 @@
 
 					<div class="well">
 
-						 <form method="post" enctype="multipart/form-data" action="<?php echo base_url('input/upload');?>">
+						 <form method="post" enctype="multipart/form-data" action="">
 
 								<input type="submit"  value="Upload" class="btn btn-primary" style="width : 100%;">
 

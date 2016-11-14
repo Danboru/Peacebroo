@@ -28,6 +28,8 @@ class Arahan extends CI_Controller{
     //helper yang di gunakan
     $this -> load -> helper('url_helper');
 
+    date_default_timezone_set("Asia/Bangkok");
+
   }
 
   public function index()
@@ -76,9 +78,8 @@ class Arahan extends CI_Controller{
 
       //fungsi hapus
       public function hapus( $id_nya ){
-        $id_nya = 1;
-	        $where = array('id_status' => $id_nya);//nama atribute
 
+	        $where = array('id_status' => $id_nya);//nama atribute
 	        $this->delete_model->hapus_data($where,'status');
           redirect('http://danboru.dev/Peacebroo/profil');
         }

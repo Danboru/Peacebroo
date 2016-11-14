@@ -25,5 +25,5 @@ $(document).ready(function(){
 
      setInterval(function(){
           $('#container_statusnya').load("http://danboru.dev/Peacebroo/fetch").fadeIn("slow");
-     }, 10000);
+     }, 1000);
 });

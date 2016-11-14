@@ -18,6 +18,8 @@ class Login extends CI_Controller{
 		parent::__construct();
 		$this->load->model('login_model');
 
+		date_default_timezone_set("Asia/Bangkok");
+
 	}
 
 	function index(){
